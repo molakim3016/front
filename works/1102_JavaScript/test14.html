@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test14.html</title>
+  <script>
+    'use strict'
+
+    function add(){
+      let su1 = myform.first.value;
+      let su2 = myform.second.value;
+      let res = parseInt(su1) + parseInt(su2);
+      alert('두수의 합은 '+res+' 입니다.')
+    }
+    function sub(){
+      let su1 = myform.first.value;
+      let su2 = myform.second.value;
+      let res = parseInt(su1) - parseInt(su2);
+      alert('두수의 합은 '+res+' 입니다.')
+    }
+    function mul(){
+      let su1 = myform.first.value;
+      let su2 = myform.second.value;
+      let res = parseInt(su1) * parseInt(su2);
+      alert('두수의 합은 '+res+' 입니다.')
+    }
+    function div(){
+      let su1 = myform.first.value;
+      let su2 = myform.second.value;
+      let res = parseFloat(su1) / parseFloat(su2);
+      alert('두수의 합은 '+res+' 입니다.')
+    }
+  </script>
+</head>
+<body>
+  <h2>사칙연산 계산하기</h2>
+  <form name="myform" method="get" action="#">
+    <p>
+      <input type="number" name="first" id="first"/>
+    </p>
+    <p>
+      <input type="number" name="second" id="second"/>
+    </p>
+    <p>
+    <input type="button" value="더하기" onclick="add()"/>
+    <input type="button" value="빼기" onclick="sub()"/>
+    <input type="button" value="곱하기" onclick="mul()"/>
+    <input type="button" value="나누기" onclick="div()"/>
+    </p>
+  </form>
+</body>
+</html>

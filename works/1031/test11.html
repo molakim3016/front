@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test11.html</title>
+  <style>
+    body{
+      margin: 0px;
+    }
+    #main{
+      position: relative;
+      width: 1000px;
+      margin: 0px auto;
+    }
+    #lo0{
+      background-color: black;
+      color: white;
+      font-size: 20pt;
+      font-weight: bolder;
+      text-align: center;
+      width: 1000px;
+      height: 100px;
+    }
+    #lo1,#lo2,#lo3,#lo5,#lo6{
+      position: absolute;
+      width: 200px;
+    }
+    #lo1:hover,#lo2:hover,#lo3:hover,#lo5:hover,#lo6:hover{
+      background-color: gray;
+    }
+    #lo1{
+      height: 200px;
+      top: 100px;
+      background-color: yellow;
+    }
+    #lo2{
+      height: 200px;
+      top: 300px;
+      background-color: green;
+    }
+    #lo3{
+      height: 200px;
+      top: 500px;
+      background-color: blue;
+    }
+    #lo4{
+      position: absolute;
+      left: 200px;
+      top: 100px;
+      width: 600px;
+    }
+    #lo4-1,#lo4-2,#lo4-3,#lo4-4{
+      position: absolute;
+      width: 230px;
+      height: 280px;
+    }
+    li{
+      list-style: none;
+    }
+    #lo4-1{
+      top: 10px;
+      left: 10px;
+      background-color: khaki;
+    }
+    #lo4-3{
+      top: 310px;
+      left: 10px;
+      background-color: pink;
+    }
+    #lo4-2{
+      top: 10px;
+      right: 10px;
+      background-color: orange;
+    }
+    #lo4-4{
+      right: 10px;
+      top: 310px;
+      background-color: violet;
+    }
+    #lo5{
+      position: absolute;
+      height: 200px;
+      top: 100px;
+      right: 0px;
+      background-color: brown;
+    }
+    #lo6{
+      position: absolute;
+      height: 200px;
+      top: 300px;
+      right: 0px;
+      background-color: skyblue;
+    }
+    #lo7{
+      position: absolute;
+      top: 700px;
+      width: 1000px;
+      height: 100px;
+      background-color: gray;
+      margin: 10px 0px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="lo0">레이아웃 패치</div>
+    <div id="lo1">연습1</div>
+    <div id="lo2">연습2</div>
+    <div id="lo3">연습3</div>
+    <div id="lo4">
+      <div id="lo4-1">
+        <ul>
+          <li>공지사항</li>
+          <li>1.연습4-1-1</li>
+          <li>2.연습4-1-2</li>
+          <li>3.연습4-1-3</li>
+          <li>4.연습4-1-4</li>
+          <li>5.연습4-1-5</li>
+        </ul>
+      </div>
+      <div id="lo4-2">
+        <ul>
+          <li>신입회원</li>
+          <li>1.연습4-2-1</li>
+          <li>2.연습4-2-2</li>
+          <li>3.연습4-2-3</li>
+          <li>4.연습4-2-4</li>
+        </ul>
+      </div>
+      <div id="lo4-3">
+        <ul>
+          <li>연습4-3-1</li>
+          <li>연습4-3-2</li>
+          <li>연습4-3-3</li>
+          <li>연습4-3-4</li>
+          <li>연습4-3-5</li>
+        </ul>
+      </div>
+      <div id="lo4-4">
+        <ul>
+          <li>1.연습4-4-1</li>
+          <li>2.연습4-4-2</li>
+          <li>3.연습4-4-3</li>
+          <li>4.연습4-4-4</li>
+          <li>5.연습4-4-5</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lo5">연습5</div>
+    <div id="lo6">연습6</div>
+    <div id="lo7">푸터(바닥글)</div>
+  </div>
+</body>
+</html>
