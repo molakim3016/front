@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // $('div span').css('color','orange');
+      $('div span:first').css('color','orange');  // 최초1개만 적용된다.
+      
+      $('div span:first-child').css({'color':'orange','fontSize':'20px'});    // div별로 그룹을 묶고, 그 중에서 첫번째 요소만 적용.
+      $('div span:only-child').css({'textDecoration':'underline','fontSize':'40px'});
+      $('div span:only-of-type').css({'border':'1px solid red','fontSize':'10px'});
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <span>1.짜장면</span>
+    <span>1.짬뽕</span>
+    <span>1.탕수육</span>
+    <span>1.볶음밥</span>
+    <span>1.팔보채</span>
+  </div>
+  <hr/>
+  <div>
+    <b>2.짜장면</b>
+    <span>2.짬뽕</span>
+    <span>2.탕수육</span>
+    <span>2.볶음밥</span>
+    <span>2.팔보채</span>
+  </div>
+  <hr/>
+  <div>
+    <span>3.짜장면</span>
+  </div>
+  <hr/>
+  <div>
+    <span>4.짜장면</span>
+    <span>4.짬뽕</span>
+    <span>4.탕수육</span>
+    <b>4.볶음밥</b>
+    <span>4.팔보채</span>
+  </div>
+  <hr/>
+  <div>
+    <b>5.짜장면</b>
+    <b>5.짬뽕</b>
+    <b>5.탕수육</b>
+    <b>5.볶음밥</b>
+    <span>5.팔보채</span>
+  </div>
+  <hr/>
+</body>
+</html>
